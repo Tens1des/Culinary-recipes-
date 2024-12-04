@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		306267D32CFFA6C4008659D2 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306267D22CFFA6C4008659D2 /* AuthView.swift */; };
+		306267D52CFFA93F008659D2 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306267D42CFFA93F008659D2 /* FirebaseAuthService.swift */; };
+		306267D72CFFAA5C008659D2 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306267D62CFFAA5C008659D2 /* AuthViewModel.swift */; };
+		306267DB2CFFB583008659D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 306267DA2CFFB583008659D2 /* GoogleService-Info.plist */; };
+		30B51DED2D01141A002C1A7A /* Pods_Culinary_recipes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 515299DCBC363A5BDD227308 /* Pods_Culinary_recipes.framework */; };
+		30B51DEE2D01141A002C1A7A /* Pods_Culinary_recipes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 515299DCBC363A5BDD227308 /* Pods_Culinary_recipes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30FBF6B02CFDDE63009706F6 /* Culinary_recipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FBF6AF2CFDDE63009706F6 /* Culinary_recipesApp.swift */; };
+		30FBF6B22CFDDE63009706F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FBF6B12CFDDE63009706F6 /* ContentView.swift */; };
+		30FBF6B42CFDDE64009706F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30FBF6B32CFDDE64009706F6 /* Assets.xcassets */; };
+		30FBF6B72CFDDE64009706F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30FBF6B62CFDDE64009706F6 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30B51DEF2D01141A002C1A7A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				30B51DEE2D01141A002C1A7A /* Pods_Culinary_recipes.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		306267D22CFFA6C4008659D2 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		306267D42CFFA93F008659D2 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
+		306267D62CFFAA5C008659D2 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		306267DA2CFFB583008659D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		30FBF6AC2CFDDE63009706F6 /* Culinary recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Culinary recipes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30FBF6AF2CFDDE63009706F6 /* Culinary_recipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Culinary_recipesApp.swift; sourceTree = "<group>"; };
+		30FBF6B12CFDDE63009706F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		30FBF6B32CFDDE64009706F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30FBF6B62CFDDE64009706F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		515299DCBC363A5BDD227308 /* Pods_Culinary_recipes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Culinary_recipes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DBB6D2F25007DB0C1E67396 /* Pods-Culinary recipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Culinary recipes.debug.xcconfig"; path = "Target Support Files/Pods-Culinary recipes/Pods-Culinary recipes.debug.xcconfig"; sourceTree = "<group>"; };
+		E4CC56824CC100543F77B2A2 /* Pods-Culinary recipes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Culinary recipes.release.xcconfig"; path = "Target Support Files/Pods-Culinary recipes/Pods-Culinary recipes.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30FBF6A92CFDDE63009706F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B51DED2D01141A002C1A7A /* Pods_Culinary_recipes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		306267D12CFFA62B008659D2 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				306267D22CFFA6C4008659D2 /* AuthView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		30FBF6A32CFDDE63009706F6 = {
+			isa = PBXGroup;
+			children = (
+				30FBF6AE2CFDDE63009706F6 /* Culinary recipes */,
+				306267DA2CFFB583008659D2 /* GoogleService-Info.plist */,
+				30FBF6AD2CFDDE63009706F6 /* Products */,
+				30FBF6C22CFE3884009706F6 /* Frameworks */,
+				7A5EA7C4FDA3DDD4447916AD /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		30FBF6AD2CFDDE63009706F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30FBF6AC2CFDDE63009706F6 /* Culinary recipes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30FBF6AE2CFDDE63009706F6 /* Culinary recipes */ = {
+			isa = PBXGroup;
+			children = (
+				30FBF6CC2CFE4137009706F6 /* SupportingFiles  */,
+				30FBF6CB2CFE4076009706F6 /* Models  */,
+				30FBF6CD2CFE41AA009706F6 /* Views  */,
+				30FBF6D02CFE4268009706F6 /* ViewModels */,
+				30FBF6D12CFE4345009706F6 /* Services  */,
+				30FBF6B52CFDDE64009706F6 /* Preview Content */,
+			);
+			path = "Culinary recipes";
+			sourceTree = "<group>";
+		};
+		30FBF6B52CFDDE64009706F6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				30FBF6B32CFDDE64009706F6 /* Assets.xcassets */,
+				30FBF6B62CFDDE64009706F6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30FBF6C22CFE3884009706F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				515299DCBC363A5BDD227308 /* Pods_Culinary_recipes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30FBF6CB2CFE4076009706F6 /* Models  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Models ";
+			sourceTree = "<group>";
+		};
+		30FBF6CC2CFE4137009706F6 /* SupportingFiles  */ = {
+			isa = PBXGroup;
+			children = (
+				30FBF6AF2CFDDE63009706F6 /* Culinary_recipesApp.swift */,
+			);
+			path = "SupportingFiles ";
+			sourceTree = "<group>";
+		};
+		30FBF6CD2CFE41AA009706F6 /* Views  */ = {
+			isa = PBXGroup;
+			children = (
+				306267D12CFFA62B008659D2 /* Auth */,
+				30FBF6B12CFDDE63009706F6 /* ContentView.swift */,
+			);
+			path = "Views ";
+			sourceTree = "<group>";
+		};
+		30FBF6D02CFE4268009706F6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				306267D62CFFAA5C008659D2 /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		30FBF6D12CFE4345009706F6 /* Services  */ = {
+			isa = PBXGroup;
+			children = (
+				306267D42CFFA93F008659D2 /* FirebaseAuthService.swift */,
+			);
+			path = "Services ";
+			sourceTree = "<group>";
+		};
+		7A5EA7C4FDA3DDD4447916AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DBB6D2F25007DB0C1E67396 /* Pods-Culinary recipes.debug.xcconfig */,
+				E4CC56824CC100543F77B2A2 /* Pods-Culinary recipes.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30FBF6AB2CFDDE63009706F6 /* Culinary recipes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30FBF6BA2CFDDE64009706F6 /* Build configuration list for PBXNativeTarget "Culinary recipes" */;
+			buildPhases = (
+				261E3C57A292A81F35C23D45 /* [CP] Check Pods Manifest.lock */,
+				30FBF6A82CFDDE63009706F6 /* Sources */,
+				30FBF6A92CFDDE63009706F6 /* Frameworks */,
+				30FBF6AA2CFDDE63009706F6 /* Resources */,
+				01F95EEB174B86ABFF746E75 /* [CP] Embed Pods Frameworks */,
+				30B51DEF2D01141A002C1A7A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Culinary recipes";
+			packageProductDependencies = (
+			);
+			productName = "Culinary recipes";
+			productReference = 30FBF6AC2CFDDE63009706F6 /* Culinary recipes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30FBF6A42CFDDE63009706F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					30FBF6AB2CFDDE63009706F6 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 30FBF6A72CFDDE63009706F6 /* Build configuration list for PBXProject "Culinary recipes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30FBF6A32CFDDE63009706F6;
+			packageReferences = (
+				30FBF6BF2CFE380C009706F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 30FBF6AD2CFDDE63009706F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30FBF6AB2CFDDE63009706F6 /* Culinary recipes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30FBF6AA2CFDDE63009706F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30FBF6B72CFDDE64009706F6 /* Preview Assets.xcassets in Resources */,
+				306267DB2CFFB583008659D2 /* GoogleService-Info.plist in Resources */,
+				30FBF6B42CFDDE64009706F6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01F95EEB174B86ABFF746E75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Culinary recipes/Pods-Culinary recipes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Culinary recipes/Pods-Culinary recipes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Culinary recipes/Pods-Culinary recipes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		261E3C57A292A81F35C23D45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Culinary recipes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30FBF6A82CFDDE63009706F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306267D52CFFA93F008659D2 /* FirebaseAuthService.swift in Sources */,
+				30FBF6B22CFDDE63009706F6 /* ContentView.swift in Sources */,
+				306267D72CFFAA5C008659D2 /* AuthViewModel.swift in Sources */,
+				30FBF6B02CFDDE63009706F6 /* Culinary_recipesApp.swift in Sources */,
+				306267D32CFFA6C4008659D2 /* AuthView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		30FBF6B82CFDDE64009706F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30FBF6B92CFDDE64009706F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30FBF6BB2CFDDE64009706F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DBB6D2F25007DB0C1E67396 /* Pods-Culinary recipes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"/Culinary recipes/Culinary recipes/Preview Content\"";
+				DEVELOPMENT_TEAM = DB7S52GZLY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KotovRoman.Culinary-recipes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30FBF6BC2CFDDE64009706F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4CC56824CC100543F77B2A2 /* Pods-Culinary recipes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"/Culinary recipes/Culinary recipes/Preview Content\"";
+				DEVELOPMENT_TEAM = DB7S52GZLY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KotovRoman.Culinary-recipes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30FBF6A72CFDDE63009706F6 /* Build configuration list for PBXProject "Culinary recipes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30FBF6B82CFDDE64009706F6 /* Debug */,
+				30FBF6B92CFDDE64009706F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30FBF6BA2CFDDE64009706F6 /* Build configuration list for PBXNativeTarget "Culinary recipes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30FBF6BB2CFDDE64009706F6 /* Debug */,
+				30FBF6BC2CFDDE64009706F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		30FBF6BF2CFE380C009706F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = 30FBF6A42CFDDE63009706F6 /* Project object */;
+}
